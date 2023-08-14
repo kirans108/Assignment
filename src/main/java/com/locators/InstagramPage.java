@@ -7,7 +7,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-public class instagramPage {
+public class InstagramPage {
     public static void main(String[] args) throws InterruptedException {
         ChromeDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
