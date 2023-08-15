@@ -21,8 +21,8 @@ public class FacebookAutomation extends BaseClass{
     @Test
     public void takescreenshots() throws InterruptedException, IOException {
         driver.get("https://www.facebook.com/login/");
-        driver.findElement(By.id("email")).sendKeys("swamykiran97@gmail.com");
-        driver.findElement(By.id("pass")).sendKeys("Kiran@0426");
+        driver.findElement(By.id("email")).sendKeys("abc@gmail.com");
+        driver.findElement(By.id("pass")).sendKeys("1223");
         driver.findElement(By.id("loginbutton")).click();
         Thread.sleep(1000);
         TakesScreenshot screenshot=(TakesScreenshot) driver;
@@ -58,8 +58,8 @@ public class FacebookAutomation extends BaseClass{
     @Test
     public void validation() throws InterruptedException {
         driver.get("https://www.facebook.com/login/");
-        driver.findElement(By.id("email")).sendKeys("swamykiran97@gmail.com");
-        driver.findElement(By.id("pass")).sendKeys("Kiran@0426");
+        driver.findElement(By.id("email")).sendKeys("abc@gmail.com");
+        driver.findElement(By.id("pass")).sendKeys("1223");
         driver.findElement(By.id("loginbutton")).click();
         String title= driver.getTitle();
         System.out.println(title);
@@ -80,8 +80,8 @@ public class FacebookAutomation extends BaseClass{
     public void fileUploadUsingSendKeys() throws AWTException, InterruptedException {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
         driver.get("https://www.facebook.com/login/");
-        driver.findElement(By.id("email")).sendKeys("swamykiran97@gmail.com");
-        driver.findElement(By.id("pass")).sendKeys("Kiran@0426");
+        driver.findElement(By.id("email")).sendKeys("abc@gmail.com");
+        driver.findElement(By.id("pass")).sendKeys("1223");
         driver.findElement(By.id("loginbutton")).click();
         driver.findElement(By.xpath("//span[text()='Add Picture']")).click();
         WebElement ss=driver.findElement(By.xpath("//span[text()='Upload Photo']"));
@@ -97,8 +97,8 @@ public class FacebookAutomation extends BaseClass{
     @Test
     public void fileUploadUsingrobotclass() throws InterruptedException, AWTException {
         driver.get("https://www.facebook.com/login/");
-        driver.findElement(By.id("email")).sendKeys("swamykiran97@gmail.com");
-        driver.findElement(By.id("pass")).sendKeys("Kiran@0426");
+        driver.findElement(By.id("email")).sendKeys("abc@gmail.com");
+        driver.findElement(By.id("pass")).sendKeys("1223");
         driver.findElement(By.id("loginbutton")).click();
         driver.findElement(By.xpath("//span[text()='Add Picture']")).click();
 
@@ -127,8 +127,8 @@ public class FacebookAutomation extends BaseClass{
     @Test
     public void fileUploadUsingAutoIt() throws IOException, AWTException {
         driver.get("https://www.facebook.com/login/");
-        driver.findElement(By.id("email")).sendKeys("swamykiran97@gmail.com");
-        driver.findElement(By.id("pass")).sendKeys("Kiran@0426");
+        driver.findElement(By.id("email")).sendKeys("abc@gmail.com");
+        driver.findElement(By.id("pass")).sendKeys("1223");
         driver.findElement(By.id("loginbutton")).click();
         driver.findElement(By.xpath("//span[text()='Add Picture']")).click();
         driver.findElement(By.xpath("//span[text()='Upload Photo']")).click();
